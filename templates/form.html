@@ -1,0 +1,31 @@
+{%extends 'template.html'%}
+
+{%block head%}
+<div class="linkBlock">
+    <a href="/">Home</a>
+</div>
+
+{%endblock%}
+
+{%block body%}
+<div id="form_block">
+    <form>
+        <div>
+            <p for="o_name">Observer Name</p>
+            <input id="o_name" type="text" placeholder="Firstname Lastname">
+        </div>
+        <div id="subject">
+            <p for="s_number">Subject Number</p>
+            <input id="s_number" type="number">
+        </div>
+        <div>
+            <p>Event/Notes</p>
+            <textarea placeholder="Enter Notes" id="notes"></textarea>
+        </div>
+        <div id="btnSubmitblock">
+            <input id="submit" type="submit" value="SUBMIT">
+        </div>
+        
+    </form>
+</div>
+{%endblock%}
